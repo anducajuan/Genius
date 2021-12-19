@@ -1,9 +1,20 @@
 #include <Arduino.h>
+#include <Functions.h>
 
+void nomeDoPrograma();
 void setup() {
-  // put your setup code here, to run once:
+  Serial.begin(115200);
+  Serial.println("Iniciando");
+  Serial.print("["); Serial.print("="); delay(10); Serial.print("="); delay(10);
+   Serial.print("="); delay(10); Serial.print("="); delay(10); Serial.print("="); delay(10);
+    Serial.print("="); delay(10); Serial.print("="); delay(10); Serial.print("="); delay(10);
+     Serial.print("="); delay(10); Serial.print("="); delay(10); Serial.print("="); delay(10);
+      Serial.print("="); delay(10); Serial.print("="); delay(10); Serial.print("="); delay(10);
+  Serial.println("]");
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  Serial.print("Oi");
+  nomeDoPrograma();
+  delay(2000);
 }
